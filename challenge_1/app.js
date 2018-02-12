@@ -8,18 +8,21 @@ let r2c3 = document.getElementById('r2c3');
 let r3c1 = document.getElementById('r3c1');
 let r3c2 = document.getElementById('r3c2');
 let r3c3 = document.getElementById('r3c3');
+let player = document.getElementById('player');
 let score = document.getElementById('score');
 
 // fucntion that toggle X or O when a square is clicked
 let toggle = (square) => {
-  
+
   //toggle part
   square.addEventListener('click', () => {
     count++;
     if (count %  2 === 0) {
       square.innerHTML = 'O';
+      player.innerHTML = 'X Turn'
     } else {
       square.innerHTML = 'X';
+      player.innerHTML = 'O Turn'
     }
 
     // row X
@@ -97,6 +100,7 @@ resetButton.addEventListener('click', () => {
   r3c1.innerHTML = '';
   r3c2.innerHTML = '';
   r3c3.innerHTML = '';
+  player.innerHTML = '';
   score.innerHTML = '';
 }, false);
 
