@@ -11,4 +11,5 @@ table, td {
 
 td {
   padding: 30px;
+  cursor: pointer;
 }
