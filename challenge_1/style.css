@@ -23,6 +23,7 @@ table {
 
 td {
   border: 5px solid black;
+  border-radius: 4px;
   width:100px;
   height:100px;
   cursor: pointer;
