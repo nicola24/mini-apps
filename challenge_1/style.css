@@ -1,17 +1,24 @@
 body {
   padding-left: 40px;
   font-family: Arial, sans-serif;
+  background-color: #14bdac;
+  font-weight: bold;
 }
 
 button {
+  color: #f2ebd3;
+  font-weight: bold;
+  border: 0;
+  padding: 10px 20px;
   font-size: 12px;
   border-radius: 4px;
-  background-color: #e7e7e7;
+  background-color: #0da192;
   cursor: pointer;
 }
 
 #player{
-  padding-left: 10px;
+  padding-left: 130px;
+  font-size: 18px;
 }
 
 table {
@@ -22,19 +29,17 @@ table {
 }
 
 td {
-  border: 5px solid black;
-  border-radius: 4px;
+  border: 7px solid #0da192;
   width:100px;
   height:100px;
   cursor: pointer;
   font-size: 30px;
+  color: #f2ebd3;
   font-weight: bold;
-  background-color: #b3b3b3;
 }
 
 #score {
   text-align: center;
-  font-weight: bold;
   animation: blinker 1s linear infinite;
 }
 
