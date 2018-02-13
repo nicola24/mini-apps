@@ -3,25 +3,36 @@ body {
   font-family: Arial, sans-serif;
 }
 
+button {
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+#player{
+  padding-left: 10px;
+}
+
 table {
   text-align: center;
   border-collapse: collapse;
+  cursor: pointer;
 }
 
 td {
   border: 5px solid black;
   width:100px;
   height:100px;
-}
-
-td {
   cursor: pointer;
   font-size: 30px;
-  color: red;
+  font-weight: bold;
+  background-color: #b3b3b3;
 }
 
 #score {
   text-align: center;
+  font-weight: bold;
   animation: blinker 1s linear infinite;
 }
 
