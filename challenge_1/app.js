@@ -16,9 +16,9 @@ let winO = 'GAME OVER O WINNER!';
 let toggle = (square) => {
   //toggle O/X
   square.addEventListener('click', () => {
-    count++;
     // if square empty then print X or O
     if (square.innerHTML === '') {
+      count++;
       if (count %  2 === 0) {
         square.innerHTML = 'O';
         player.innerHTML = 'X Turn';
