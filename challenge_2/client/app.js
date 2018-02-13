@@ -17,15 +17,13 @@ $( "form" ).submit(function( event ) {
 
 // ****************************************************************************
 
-//ajax request
-// const ajaxRequest = {
-//   $.ajax({
-//     method: 'POST',
-//     data: JSON.stringify(data),
-//     URL: 'localhost:3000',
-//     success: function(data) {
-//       console.log(data);
-//     };
-//     error: function();
-//   });
-// };
+// ajax request
+// $.ajax({
+//   method: 'POST',
+//   data: JSON.stringify(data),
+//   URL: 'localhost:3000',
+//   success: function(data) {
+//     console.log(data);
+//   };
+//   error: function();
+// });
