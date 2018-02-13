@@ -17,7 +17,7 @@ let toggle = (square) => {
   //toggle O/X
   square.addEventListener('click', () => {
     count++;
-    // if sqaure empty then print X or 0
+    // if square empty then print X or O
     if (square.innerHTML === '') {
       if (count %  2 === 0) {
         square.innerHTML = 'O';
@@ -80,6 +80,10 @@ let toggle = (square) => {
     }
     if (r1c3.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c1.innerHTML === 'O') {
       score.innerHTML = winO;
+    }
+    // draw case
+    if (count === 9) {
+      score.innerHTML = 'It\'s a draw!';
     }
   }, false);
 };
