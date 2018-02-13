@@ -39,7 +39,7 @@ td {
 }
 
 #score {
-  text-align: center;
+  padding-left: 65px;
   animation: blinker 1s linear infinite;
 }
 

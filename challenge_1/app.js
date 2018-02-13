@@ -10,11 +10,13 @@ let r3c2 = document.getElementById('r3c2');
 let r3c3 = document.getElementById('r3c3');
 let player = document.getElementById('player');
 let score = document.getElementById('score');
+let winX = 'GAME OVER X WINNER!';
+let winO = 'GAME OVER O WINNER!';
 
-// fucntion that toggle X or O when a square is clicked
+// function that toggle X or O when a square is clicked
 let toggle = (square) => {
 
-  //toggle part
+  //toggle O/X
   square.addEventListener('click', () => {
     count++;
     if (count %  2 === 0) {
@@ -27,62 +29,62 @@ let toggle = (square) => {
 
     // row X
     if (r1c1.innerHTML === 'X' && r1c2.innerHTML === 'X' && r1c3.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
     if (r2c1.innerHTML === 'X' && r2c2.innerHTML === 'X' && r2c3.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
     if (r3c1.innerHTML === 'X' && r3c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
 
     // column X
     if (r1c1.innerHTML === 'X' && r2c1.innerHTML === 'X' && r3c1.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
     if (r1c2.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c2.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
     if (r1c3.innerHTML === 'X' && r2c3.innerHTML === 'X' && r3c3.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
 
     // diagonal X
     if (r1c1.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
     if (r1c3.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c1.innerHTML === 'X') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winX;
     }
 
     // row O
     if (r1c1.innerHTML === 'O' && r1c2.innerHTML === 'O' && r1c3.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER O WINNER!';
+      score.innerHTML = winO;
     }
     if (r2c1.innerHTML === 'O' && r2c2.innerHTML === 'O' && r2c3.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER O WINNER!';
+      score.innerHTML = winO;
     }
     if (r3c1.innerHTML === 'O' && r3c2.innerHTML === 'O' && r3c3.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER O WINNER!';
+      score.innerHTML = winO;
     }
 
     // column O
     if (r1c1.innerHTML === 'O' && r2c1.innerHTML === 'O' && r3c1.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER O WINNER!';
+      score.innerHTML = winO;
     }
     if (r1c2.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c2.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER O WINNER!';
+      score.innerHTML = winO;
     }
     if (r1c3.innerHTML === 'O' && r2c3.innerHTML === 'O' && r3c3.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER O WINNER!';
+      score.innerHTML = winO;
     }
 
     // diagonal O
     if (r1c1.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c3.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winO;
     }
     if (r1c3.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c1.innerHTML === 'O') {
-      score.innerHTML = 'GAME OVER X WINNER!';
+      score.innerHTML = winO;
     }
 
   }, false);
@@ -101,6 +103,8 @@ resetButton.addEventListener('click', () => {
   r3c2.innerHTML = '';
   r3c3.innerHTML = '';
   score.innerHTML = '';
+  count = 0;
+  player.innerHTML = 'X Turn'
 }, false);
 
 toggle(r1c1);
