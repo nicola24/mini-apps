@@ -17,13 +17,16 @@ let toggle = (square) => {
   //toggle O/X
   square.addEventListener('click', () => {
     count++;
-    if (count %  2 === 0) {
-      square.innerHTML = 'O';
-      player.innerHTML = 'X Turn'
-    } else {
-      square.innerHTML = 'X';
-      player.innerHTML = 'O Turn'
-    }
+    // if sqaure empty then print X or 0
+    if (square.innerHTML === '') {
+      if (count %  2 === 0) {
+        square.innerHTML = 'O';
+        player.innerHTML = 'X Turn';
+      } else {
+        square.innerHTML = 'X';
+        player.innerHTML = 'O Turn';
+      }
+  }
     // row X
     if (r1c1.innerHTML === 'X' && r1c2.innerHTML === 'X' && r1c3.innerHTML === 'X') {
       score.innerHTML = winX;
