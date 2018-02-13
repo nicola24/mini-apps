@@ -2,23 +2,29 @@
 <html lang="en">
 <head>
   <title>Client Server App</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <!-- firstName,lastName,county,city,role,sales -->
   <form>
     First name:<br>
-    <input type="text"><br>
+    <input type="text" id="firstname"><br>
     Last Name:<br>
-    <input type="text"><br>
+    <input type="text" id="lastname"><br>
     County:<br>
-    <input type="text"><br>
+    <input type="text" id="county"><br>
     City:<br>
-    <input type="text"><br>
+    <input type="text" id="city"><br>
     Role:<br>
-    <input type="text"><br>
+    <input type="text" id="role"><br>
     Sales:<br>
-    <input type="text"><br>
-    <br><input type="submit">
+    <input type="text" id="sales"><br>
+    <br><input type="submit" value="Submit">
   </form>
+  <div>
+    <p>Result:</p>
+    <p></p>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
