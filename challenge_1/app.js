@@ -1,5 +1,4 @@
 let count = 0;
-
 let r1c1 = document.getElementById('r1c1');
 let r1c2 = document.getElementById('r1c2');
 let r1c3 = document.getElementById('r1c3');
@@ -15,7 +14,6 @@ let winO = 'GAME OVER O WINNER!';
 
 // function that toggle X or O when a square is clicked
 let toggle = (square) => {
-
   //toggle O/X
   square.addEventListener('click', () => {
     count++;
@@ -26,7 +24,6 @@ let toggle = (square) => {
       square.innerHTML = 'X';
       player.innerHTML = 'O Turn'
     }
-
     // row X
     if (r1c1.innerHTML === 'X' && r1c2.innerHTML === 'X' && r1c3.innerHTML === 'X') {
       score.innerHTML = winX;
@@ -37,7 +34,6 @@ let toggle = (square) => {
     if (r3c1.innerHTML === 'X' && r3c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
       score.innerHTML = winX;
     }
-
     // column X
     if (r1c1.innerHTML === 'X' && r2c1.innerHTML === 'X' && r3c1.innerHTML === 'X') {
       score.innerHTML = winX;
@@ -48,7 +44,6 @@ let toggle = (square) => {
     if (r1c3.innerHTML === 'X' && r2c3.innerHTML === 'X' && r3c3.innerHTML === 'X') {
       score.innerHTML = winX;
     }
-
     // diagonal X
     if (r1c1.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
       score.innerHTML = winX;
@@ -56,7 +51,6 @@ let toggle = (square) => {
     if (r1c3.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c1.innerHTML === 'X') {
       score.innerHTML = winX;
     }
-
     // row O
     if (r1c1.innerHTML === 'O' && r1c2.innerHTML === 'O' && r1c3.innerHTML === 'O') {
       score.innerHTML = winO;
@@ -67,7 +61,6 @@ let toggle = (square) => {
     if (r3c1.innerHTML === 'O' && r3c2.innerHTML === 'O' && r3c3.innerHTML === 'O') {
       score.innerHTML = winO;
     }
-
     // column O
     if (r1c1.innerHTML === 'O' && r2c1.innerHTML === 'O' && r3c1.innerHTML === 'O') {
       score.innerHTML = winO;
@@ -78,7 +71,6 @@ let toggle = (square) => {
     if (r1c3.innerHTML === 'O' && r2c3.innerHTML === 'O' && r3c3.innerHTML === 'O') {
       score.innerHTML = winO;
     }
-
     // diagonal O
     if (r1c1.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c3.innerHTML === 'O') {
       score.innerHTML = winO;
@@ -86,7 +78,6 @@ let toggle = (square) => {
     if (r1c3.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c1.innerHTML === 'O') {
       score.innerHTML = winO;
     }
-
   }, false);
 };
 
