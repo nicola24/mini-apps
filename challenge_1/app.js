@@ -27,62 +27,62 @@ let toggle = (square) => {
 
     // row X
     if (r1c1.innerHTML === 'X' && r1c2.innerHTML === 'X' && r1c3.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
     if (r2c1.innerHTML === 'X' && r2c2.innerHTML === 'X' && r2c3.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
     if (r3c1.innerHTML === 'X' && r3c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
 
     // column X
     if (r1c1.innerHTML === 'X' && r2c1.innerHTML === 'X' && r3c1.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
     if (r1c2.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c2.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
     if (r1c3.innerHTML === 'X' && r2c3.innerHTML === 'X' && r3c3.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
 
     // diagonal X
     if (r1c1.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
     if (r1c3.innerHTML === 'X' && r2c2.innerHTML === 'X' && r3c1.innerHTML === 'X') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
 
     // row O
     if (r1c1.innerHTML === 'O' && r1c2.innerHTML === 'O' && r1c3.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER O WINNER!';
     }
     if (r2c1.innerHTML === 'O' && r2c2.innerHTML === 'O' && r2c3.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER O WINNER!';
     }
     if (r3c1.innerHTML === 'O' && r3c2.innerHTML === 'O' && r3c3.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER O WINNER!';
     }
 
     // column O
     if (r1c1.innerHTML === 'O' && r2c1.innerHTML === 'O' && r3c1.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER O WINNER!';
     }
     if (r1c2.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c2.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER O WINNER!';
     }
     if (r1c3.innerHTML === 'O' && r2c3.innerHTML === 'O' && r3c3.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER O WINNER!';
     }
 
     // diagonal O
     if (r1c1.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c3.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
     if (r1c3.innerHTML === 'O' && r2c2.innerHTML === 'O' && r3c1.innerHTML === 'O') {
-      score.innerHTML = 'YOU LOOSE!';
+      score.innerHTML = 'GAME OVER X WINNER!';
     }
 
   }, false);
@@ -100,7 +100,6 @@ resetButton.addEventListener('click', () => {
   r3c1.innerHTML = '';
   r3c2.innerHTML = '';
   r3c3.innerHTML = '';
-  player.innerHTML = '';
   score.innerHTML = '';
 }, false);
 
