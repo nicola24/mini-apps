@@ -37,7 +37,7 @@ let toggle = (square) => {
     if (r3c1.innerHTML === 'X' && r3c2.innerHTML === 'X' && r3c3.innerHTML === 'X') {
       score.innerHTML = winX;
     }
-
+    
     // column X
     if (r1c1.innerHTML === 'X' && r2c1.innerHTML === 'X' && r3c1.innerHTML === 'X') {
       score.innerHTML = winX;
