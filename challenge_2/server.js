@@ -5,11 +5,6 @@ const app = express();
 //connect to client
 //app.use(express.static('client'));
 
-// ***GET***
-app.get('/', (req, res) => {
-  res.send('GET REQUEST')
-});
-
 // ***POST***
 app.post('/', (req, res) => {
   let body = [];
@@ -28,7 +23,7 @@ app.post('/', (req, res) => {
     }
     // make it a string CSV format
     result = tempArr.join();
-    // result typeof === string, ie: Nicolas,Peyrichou,CA,SF,marketing,5000
+    // response to the server is a string, ie: Nicolas,Peyrichou,CA,SF,marketing,5000
     res.send(result);
   });
 });

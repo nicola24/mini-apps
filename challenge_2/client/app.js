@@ -1,16 +1,9 @@
 //function that handle submit button
 $( "form" ).submit(function( event ) {
   //object that store data from form and submit it
-  let data = {
-      firstName: $('#firstname').val(),
-      lastName: $('#lastname').val(),
-      county: $('#county').val(),
-      city: $('#city').val(),
-      role: $('#role').val(),
-      sales: $('#sales').val(),
-    };
+  let data = $('#input').val();
     // print data in the div result
-    $('#result').text(JSON.stringify(data));
+    $('#result').text(data);
     // prevent submit from reloading page
     event.preventDefault();
 });
