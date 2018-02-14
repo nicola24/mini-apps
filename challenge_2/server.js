@@ -1,6 +1,5 @@
 // ***SERVER***
 const express = require('express');
-const fs = require('fs');
 const app = express();
 //connect to client
 app.use(express.static('client'));
