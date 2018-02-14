@@ -3,18 +3,14 @@ $( "form" ).submit(function( event ) {
   //store data from input field
   let data = $('#input').val();
 
-  // print data in the div result
-  // $('#result').text(typeof data);
-  //
-  // alert('it's working');
-
   // ***AJAX REQUEST***
   $.ajax({
-    url: 'localhost:3000',
+    url: '',
     method: 'POST',
-    data: JSON.stringify(data),
+    data: data,
     contentType: 'application/json',
     success: function (data) {
+      $('#result').text(data);
       console.log('DATA SENT', data);
     },
     error: function (data) {
