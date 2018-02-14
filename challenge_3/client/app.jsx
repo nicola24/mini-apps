@@ -1,21 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 
-
-//*** COMPONENT BOARD ***
-class Board extends React.Component {
-  render() {
-    return (
-      <h1>Connect Four React</h1>
-    );
+class App extends React.Component {
+  render () {
+    return <h2>app.jsx</h2>;
   }
 }
 
-// *** COMPONENT SQUARE ***
-const Square = (x, y) => (
-  <div>
-    {this.x}
-  </div>
-);
+render(<App/>, document.getElementById('app'));
 
-ReactDOM.render(<Board />, document.getElementByID('app'));
+//*** COMPONENT BOARD ***
+// class Board extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//           <h1>Connect Four React</h1>
+//       </div>
+//     );
+//   }
+// }
+
+// *** COMPONENT SQUARE ***
+// const Square = (props) => (
+//   <div>
+//       {this.props.x}{this.props.y}
+//   </div>
+// );
