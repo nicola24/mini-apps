@@ -6,7 +6,6 @@ app.use(express.static('client'));
 
 // ***POST***
 app.post('/', (req, res) => {
-  console.log('server');
   let body = [];
   let tempArr = [];
   let result = '';
@@ -25,7 +24,6 @@ app.post('/', (req, res) => {
     result = tempArr.join();
     // response to the server is a string
     res.send(result);
-    console.log(result);
   });
 });
 
