@@ -8,7 +8,6 @@ class Board extends React.Component {
     this.state = {
     };
   }
-  
   render() {
     return (
       <div>
