@@ -5,7 +5,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pinArr: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       currFrame: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       roundOne: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       roundTwo: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -15,6 +14,7 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.roll = 0;
     this.frame = 0;
+    this.pinArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   }
 
   handleClick(e) {
@@ -30,6 +30,7 @@ class App extends React.Component {
       this.frame++;
       this.roll = 0;
     }
+
   }
 
   render() {
@@ -43,21 +44,21 @@ class App extends React.Component {
         </div>
         <div>
           <div className='pin'>
-            <Pins pin={this.state.pinArr[7]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[4]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[1]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[0]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[7]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[4]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[1]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[0]} handleClick={this.handleClick} />
           </div>
           <div className='pin'>
-            <Pins pin={this.state.pinArr[8]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[5]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[2]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[8]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[5]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[2]} handleClick={this.handleClick} />
           </div>
           <div className='pin'>
-            <Pins pin={this.state.pinArr[9]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[6]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[3]} handleClick={this.handleClick} />
-            <Pins pin={this.state.pinArr[10]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[9]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[6]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[3]} handleClick={this.handleClick} />
+            <Pins pin={this.pinArr[10]} handleClick={this.handleClick} />
           </div>
         </div>
         <div>
